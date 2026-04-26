@@ -49,6 +49,7 @@ class Libft(BaseTester):
 			return all_funcs
 
 		all_funcs = PART_1_FUNCTIONS + PART_2_FUNCTIONS
+		self.new_core_hotfix()
 		if self.has_bonus():
 			all_funcs = all_funcs + BONUS_FUNCTIONS
 			set_bonus(True)
@@ -93,3 +94,11 @@ class Libft(BaseTester):
 		with Halo(text=text) as spinner:
 			run_command(command, spinner)
 			spinner.succeed()
+
+	def new_core_hotfix(self):
+		makefiles = [Path(self.temp_dir, "Makefile"),
+					 Path(self.temp_dir, "__my_srcs", "Makefile")]
+		if not self.has_bonus():
+			for makefile in makefiles:
+				with open(makefile, "a") as f:
+					f.write("\nbonus:		$(NAME)")
