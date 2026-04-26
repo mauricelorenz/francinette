@@ -1,5 +1,9 @@
 # Francinette
 
+## Fork with support for the new common core where libft bonus functions are mandatory
+
+## Original part of README:
+
 ## :exclamation: This repo is long abandoned. It's probably way out of date, and does not work on newer systems. Please seek other alternatives. :exclamation:
 
 # Also: write your own tests!!
