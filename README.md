@@ -2,6 +2,11 @@
 
 ## Fork with support for the new common core where libft bonus functions are mandatory
 
+### Changelog
+
+- Support new common core libft where bonus functions are mandatory
+- Fix unused variable causing compilation error in ft_lstmap main of libft-war-machine
+
 ## Original part of README:
 
 ## :exclamation: This repo is long abandoned. It's probably way out of date, and does not work on newer systems. Please seek other alternatives. :exclamation:
